@@ -1,4 +1,5 @@
 # React + Vite
+# VSCODE POWER MODE Extentsion For FLmaes on typing !!!
 
 1. module install karna hai 
 ---> npm install @auth0/auth0-react 
