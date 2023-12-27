@@ -9,10 +9,10 @@ function App() {
   const { user, isAuthenticated, isLoading } = useAuth0();
   // const [count, setCount] = useState(0);
 
-  if (isLoading) {
-    return <div>Loading ...</div>;
-  }
-  else{
+  // if (isLoading) {
+  //   return <div>Loading ...</div>;
+  // }
+  
 
   return (
     <>
@@ -23,6 +23,7 @@ function App() {
       <p className="read-the-docs">Click on Signup oR login</p>
       {isAuthenticated ? (
         <>
+        
         <h1>Welcome </h1>
         <h2>{user.name}</h2>
         <button
@@ -38,10 +39,11 @@ function App() {
         <button onClick={() => loginWithRedirect()} className="btn">
           Signup/Login
         </button>
+
       )}
     </>
   );
-      }
+      
 }
 
 export default App;
